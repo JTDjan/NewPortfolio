@@ -1,0 +1,24 @@
+@use "../../Assets/Styles/variables" as *;
+
+.nav {
+  display:flex;
+  justify-content: space-between;
+  
+  .linkConatiner{
+    text-decoration: none;
+    display: flex;
+    
+    ul{
+      list-style-type: none;
+
+      li{
+        text-decoration: none;
+        .linkStyle{
+        text-decoration: none;
+
+      }
+      }
+
+    }
+  }
+}
