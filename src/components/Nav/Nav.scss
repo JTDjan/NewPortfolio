@@ -1,24 +1,10 @@
 @use "../../Assets/Styles/variables" as *;
 
 .nav {
-  display:flex;
-  justify-content: space-between;
-  
-  .linkConatiner{
-    text-decoration: none;
-    display: flex;
-    
-    ul{
-      list-style-type: none;
-
-      li{
-        text-decoration: none;
-        .linkStyle{
-        text-decoration: none;
-
-      }
-      }
-
-    }
-  }
+  width: 100%;
+  height: 70px;
+  background-color: lightgreen;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
