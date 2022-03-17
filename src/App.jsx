@@ -7,12 +7,14 @@ import Landing from "./components/LandingPage/Landing";
 import About from "./components/AboutMe/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
+import Menu from "./components/Menu/Menu";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
     <div className="app">
       <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Landing />
         <About />
