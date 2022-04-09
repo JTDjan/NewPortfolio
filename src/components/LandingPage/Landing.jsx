@@ -1,5 +1,6 @@
 import React from "react";
 import "./landing.scss";
+import { init } from "ityped";
 
 const Landing = () => {
   return (
