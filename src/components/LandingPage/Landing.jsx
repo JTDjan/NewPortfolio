@@ -1,8 +1,17 @@
-import React from "react";
+import { React, useEffect, useRef } from "react";
 import "./landing.scss";
 import { init } from "ityped";
 
 const Landing = () => {
+  const textRef = useRef();
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: false,
+      backDelay: 1500,
+      backSpeed: 60,
+      strings: ["Developer", "Designer", "Learner!"],
+    });
+  }, []);
   return (
     <div className="landing" id="landing">
       <div className="left">
@@ -18,7 +27,7 @@ const Landing = () => {
           <h2>Hi there, I'm</h2>
           <h1>Josiah Djan</h1>
           <h3>
-            Jnr Software developer <span>Designer</span>
+            Jnr Software developer <span ref={textRef}></span>
           </h3>
           <a href="#about">
             {/* <img src="" alt="" /> */}
